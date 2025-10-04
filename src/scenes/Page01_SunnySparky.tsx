@@ -16,20 +16,16 @@ export const Page01_SunnySparky = () => {
       />
 
       <div className="sunny-character" onClick={handleSunnyClick}>
-        <div className="sunny-body">
-          <div className="sunny-face">
-            <div className="sunny-eye left"></div>
-            <div className="sunny-eye right"></div>
-            <div className="sunny-smile"></div>
-          </div>
-        </div>
-
-        <div className="solar-ropes">
-          <div className="rope rope-1"></div>
-          <div className="rope rope-2"></div>
-          <div className="rope rope-3"></div>
-          <div className="rope rope-4"></div>
-        </div>
+        <img
+          src="/assets/Sunny_body.png"
+          alt="Sunny the Sun"
+          className="sunny-body-image"
+        />
+        <img
+          src="/assets/Sunny_ropes.png"
+          alt="Sunny's glowing ropes"
+          className="sunny-ropes-image"
+        />
       </div>
 
       {showSparky && (
@@ -45,3 +41,6 @@ export const Page01_SunnySparky = () => {
     </div>
   );
 };
+
+
+export { Page01_SunnySparky }
